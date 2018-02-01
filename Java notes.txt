@@ -1,0 +1,201 @@
+Function and method are same.
+
+3 types of veriable :
+Local
+Instance/ Global/ Non static
+If u have access the instance vaiable or method then we have to creat instance of that class.
+Memory location heap memory.
+
+Global/ststic/class variable
+Memory location class memory.
+No need to creat the instance of that class.
+
+
+------------------------------------------------------------------------>>>
+24-12-2017
+
+String Manuplation -->>
+indexOf
+LastindexOf
+compareTo
+compareToIgnoreCase
+Concat
+length
+replace,replaceAll,replaceFirst
+startWith , endwith
+split
+subString , subSuquence
+charArray
+
+
+class - collection of multiple objects or its blueprint
+Instence - Type of class which refer to object
+Object - Holds datamember 
+
+Inheritance : 
+Accessing the datamember in parent into child class.
+'extends' keywords used.
+Single
+Mutilevel
+Hierachy
+
+
+Polymorphism :
+One task can perform in many way(one to many).
+Compile time Polymorphism - Method overloading , 
+Run time polymorphism - Method overriding - Dynamic binding
+
+Method overloading/Compile time Polymorphism : 
+It is with in same class.
+Same method name with different number of parameters
+Same class , same method , same no of parameters but order is different.
+Smne class , same method name, data type is different.
+Return type does not matter.
+
+Run time polymorphism - Method overriding - Dynamic binding
+Always outside of class
+Support to inheritance.
+Whole signature should match then method overriding happens.
+
+---------------------------------------------------------------------->>>>
+07012017
+
+Encapsulation
+Binding the Data 
+Using the getter and setter and public method we can acces the private method.
+
+
+Abstraction
+Hiding the data.
+If any method is abstract then it is abstract class.
+Only decleration no implementation.
+Supports Inheritance and overriding , multipale inheritance.
+Instance can not create of abstraction class.(But by using oerride we can create it)
+*Need to mentation abstract keywords in front of any method.
+
+
+Assignment
+cearte class empdetails 3 abstract method emp code, name and age 
+I have empcode which extends empdetails
+calling class which print code age and name
+
+
+Interfaces : 
+100% abstraction means by default all methods are abstract.
+*No need to mentation abstract keywords in front of any method.
+
+
+Class to Class - extends
+Class to Interface - implements
+Interface to interface - extends
+
+
+
+Constructor :
+Same as class name.
+No return type.
+It can overload.
+-Default
+-Parametrized
+-copy Constructor
+-Constructor chaining
+(super always be first.)
+
+
+Access Modifier : 
+public
+private
+default
+protected
+
+Class can be private and protected.
+--------------------------------------------------------------------------------------------------------------
+
+Exception Handling : 
+Checked Exception-Compile timr Exception
+Unchecked Exception - Run time Exception
+
+throws are used to handle the checked exception.
+
+Code within try block is called proteced code.
+
+finally block always executes.
+
+
+SELENIUM
+
+Selenium automate bowser.
+It is an API, open source.
+Works on different brwser.
+
+Locators : 
+ID
+ClassName
+Xpath,
+Css
+linkText
+PartialLinkText
+
+
+WebDriver driver = new FirefoxDriver();   - driver is type of WebDriver which is refer to firefoxdriver.
+
+
+----------------------------------------------------------------------------------------------------------------
+21-01-2017
+
+Selenium commands : 
+
+get();
+navigate.to();
+backward();
+forward();
+
+getText();
+getAttribute();  -  it give runtime value of that attribute and its return type is String.
+
+How to check browken URL - 
+String expectedURL = "www.abc.com/home";
+String actualURL = driver.getCurrentRrl();
+
+
+For scroll the page there is no webelement so we use JavascriptExecutor.
+(JavascriptExecutor)driver.executscript("argument[0].scrollbar",scrollpage);
+
+FirefoxProfile profile = new FirefoxProfile();
+profile.setPreference("browser.startup.homepage", "https://google.com")
+
+To set the browser size
+org.openqa.selenium.Dimension d = new org.openqa.selenium.Dimension(420,600);
+driver.manage.window().setSize(d);
+
+switchTo();
+
+MouseOver command
+action.contextClick();
+
+-----------------------------------------------------------------------------------------------------------------
+28-01-2018
+
+
+TestNg- it is basic setup for the test case execution
+
+Difference between BeforeTest and beforesuite?
+What are the Hierachy of testng?
+
+TestNG support attribute.
+Priority - execute TC in mentation order.
+Invocation count - WE set the no of times to the TC.
+Description = we can write the description of TC.
+DependsOnMethod - No need to call or write same code multitimes.
+enable - we setting the TC execution(if enable = false then TC will not execute).
+groups - We can execute the TC which we have grouped. And this is advantage over the JUnit(In JUnit group annotation not available).
+
+
+Asssert and Verify.
+Asser.assertEquals(actual, expected) - Asser is class , assertEquals is static method and Asser.assertEquals(actual, expected) this is method overloading concept. 
+Assert - if TC fail then it terminates.
+Verify - if TC fail then it will continue the execution.
+assertTrue , assertFalse , Asser.assertEquals(actual, expected)
+
+
+CheckPoint - isenable , isdisplayed,
