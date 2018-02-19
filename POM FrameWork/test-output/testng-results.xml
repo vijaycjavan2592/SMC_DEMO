@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16396" started-at="2018-02-18T17:31:30Z" finished-at="2018-02-18T17:31:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16396" started-at="2018-02-18T17:31:30Z" finished-at="2018-02-18T17:31:46Z">
+      <class name="seleniumQTP_Tests.SeleniumQTP_RegistrationPage1_Test">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:seleniumQTP_Tests.SeleniumQTP_RegistrationPage1_Test@1a92922]" name="beforeMethod" is-config="true" duration-ms="9516" started-at="2018-02-18T23:01:30Z" finished-at="2018-02-18T23:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="succefullyNavigatePage1()[pri:0, instance:seleniumQTP_Tests.SeleniumQTP_RegistrationPage1_Test@1a92922]" name="succefullyNavigatePage1" duration-ms="6730" started-at="2018-02-18T23:01:39Z" finished-at="2018-02-18T23:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- succefullyNavigatePage1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:seleniumQTP_Tests.SeleniumQTP_RegistrationPage1_Test@1a92922]" name="afterMethod" is-config="true" duration-ms="133" started-at="2018-02-18T23:01:46Z" finished-at="2018-02-18T23:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- seleniumQTP_Tests.SeleniumQTP_RegistrationPage1_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
